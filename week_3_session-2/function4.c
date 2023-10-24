@@ -14,6 +14,13 @@ float fahr_to_kelvin (float f_temp)
     return k_temp;
 }
 
+float fahr_to_Newton (float f_temp)
+{
+    return 3.303 * fahr_to_celsius(f_temp);
+}
+
+
+
 int main () 
 {
     float fahrenheit;
@@ -28,6 +35,8 @@ int main ()
     printf ("Select Q to quit\n");
 
     scanf(" %c", &option);
+
+  
 
     switch (option)
     {

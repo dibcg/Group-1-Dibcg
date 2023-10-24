@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-void tokeniseRecord(const char *input, const char *delimiter,
+void tokeniseRecord (const char *input, const char *delimiter,
                     char *date, char *time, char *steps) {
     // Create a copy of the input string as strtok modifies the string
     char *inputCopy = strdup(input);
