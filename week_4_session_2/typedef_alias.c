@@ -5,6 +5,7 @@ typedef unsigned long long int array_size_t;
 
 int main() {
     array_size_t array_size = 256; // 64-bit integers
+    
     char array [array_size];
     for (array_size_t i = 0; i < array_size-1; i++)
         array[i]  = i + 1;

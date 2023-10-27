@@ -9,6 +9,9 @@ typedef struct {
 int main () {
     // Data generated using ChatGPT.
     int number_of_students = 10, i;
+
+    student new;
+
     student students [] = {
         {"Alice Smith",    "64827593", 67},
         {"Bob Johnson",    "19374650", 89},
@@ -21,6 +24,7 @@ int main () {
         {"Isaac Harris",   "61093745", 89},
         {"Jack White",     "92847501", 72},
     };
+    
     for (i = 0; i < number_of_students; i++) {
         printf("-------------\n");
         printf("Student name: %s\n", students[i].name);
