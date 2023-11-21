@@ -35,7 +35,7 @@ int main()
         tokeniseRecord(line, ",", daily_readings[counter].date, &daily_readings[counter].bloodIron);
         counter++;
     }
-
+  
     fclose(input);
 
     int num_records = counter;
