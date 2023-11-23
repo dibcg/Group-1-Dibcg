@@ -25,4 +25,5 @@ int main()
         printf ("\nvector[%d] = %d\n", i , vector[i]);
     }
 
+    free(vector);
 }
