@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 void access_2D (int** Matrix, int col, int row)
 {
@@ -7,16 +8,19 @@ void access_2D (int** Matrix, int col, int row)
     for (int i=0; i<row; i++)
     {
         for (int j=0; j<col; j++)
-            Matrix[j][i] = i*j;
-        printf("\n");
+            Matrix[j][i] = i;
+        
     }
 }
 
 void print_2D (int** Matrix, int col, int row)
 {
     for (int i=0; i<row; i++)
+    {
         for (int j=0; j<col; j++)
             printf ("%d ", Matrix[j][i]);
+        printf("\n");
+    }
 }
 
 void free_Matrix (int** Matrix, int col)
@@ -31,14 +35,16 @@ int main()
 {
     int m,n;
 
-    printf("Input the number of columns: = "); 
+    printf("\nInput the number of columns: = "); 
 
-    scanf("%d",m);
+    scanf("%d",&m);
 
-    printf("Input the number of rows: = "); 
+    printf("\nInput the number of rows: = "); 
 
-    scanf("%d",n);
+    scanf("%d",&n);
 
+    printf("\n");
+    
     // Create the 2-dimensional array
     int** Matrix = (int **) malloc(sizeof(int*) * m);
 
