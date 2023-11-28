@@ -41,6 +41,7 @@ int pseudo_printf(const char *specifier, ...)
                 break;
             case 'c':
                 //Special care needs to be taken here. Look at platinum level worksheet.
+                character_count += fprintf(stdout, "%c", va_arg(args, int));
                 break;
             case 's':
                 break;
@@ -72,7 +73,7 @@ int main()
 
     printf ("\n \n");
 
-    count = pseudo_printf("Three parameters this time. %d, %d, %f, %f", 56, 65, 66.5, 76.6);
+    count = pseudo_printf("Three parameters this time. %d, %d, %c, %f", 56, 65, 'c', 76.6);
 
     printf ("\n \n");
 

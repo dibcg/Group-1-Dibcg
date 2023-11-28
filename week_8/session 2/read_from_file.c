@@ -1,7 +1,8 @@
-```c
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+
 #define ROWS 10
 #define COLS 3
 
@@ -61,4 +62,3 @@ int main() {
 
     return 0;
 }
-```
