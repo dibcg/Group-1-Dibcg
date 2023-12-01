@@ -10,6 +10,9 @@ int main()
 
     printf ( "\nAddress[1] = %d\n\n", *address++);
 
+    //printf ( "\nAddress[1] = %d\n\n", *address);
+    //address = address + 1;
+
     printf ("\n Address[2] = %d\n\n", *++address);
 
     printf ("\n \n What is happening here?");

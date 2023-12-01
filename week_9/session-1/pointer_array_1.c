@@ -6,12 +6,16 @@ int main()
 
     int* address;
 
+    int b;
+    
+    address = &b;
+
     address = vector; 
 
     printf("\n \n address = %p\n", address);
 
     printf( " vector = %p\n\n",vector);
 
-    printf ("address[0] = %d  ,  vector[0] = %d  \n\n",address[0],vector[0]);
+    printf ("address[1] = %d  ,  vector[0] = %d  \n\n",address[1],vector[0]);
 
 }
